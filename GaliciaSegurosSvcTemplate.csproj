@@ -10,7 +10,8 @@
 	  <Description>Template para los microservicios de Galicia Seguros</Description>
 	  <PackageTags>dotnet-new;templates;contoso</PackageTags>
 	  <RepositoryType>git</RepositoryType>
-	  <RepositoryUrl>https://github.com/threenine/api-template</RepositoryUrl>
+	  <RepositoryUrl>https://github.com/lighuenlacamoire/NetCoreSvcTemplate</RepositoryUrl>
+	  <Copyright>Copyright © 2022</Copyright>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
