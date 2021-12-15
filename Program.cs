@@ -1,4 +1,12 @@
+using Microsoft.OpenApi.Models;
 using System.Reflection;
+using System.Text.RegularExpressions;
+
+string serviceName = "API Galicia Seguros Template";
+string serviceDescription = "Template para los microservicios de Galicia Seguros";
+string serviceVersion = "v1";
+bool isDevelopment;
+string swaggerPrefix = "";
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,25 +20,30 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1",
-        new Microsoft.OpenApi.Models.OpenApiInfo
-                    {
-                        Title = "API Galicia Seguros Template",
-                        Description = "Template para los microservicios de Galicia Seguros",
-                        Version = "v1",
-                        Contact = new Microsoft.OpenApi.Models.OpenApiContact
-                        {
-                            Name = "Banco Galicia",
-                            Email = string.Empty,
-                            Url = new Uri("https://x.com"),
-                        },
-                    });
+        new OpenApiInfo
+        {
+            Title = serviceName,
+            Description = serviceDescription,
+            Version = serviceVersion,
+            Contact = new OpenApiContact
+            {
+                Name = "Banco Galicia",
+                Email = string.Empty,
+                Url = new Uri("https://x.com"),
+            },
+        });
     options.EnableAnnotations();
+    options.CustomSchemaIds(type => Regex.Replace(type.ToString(), @"[^a-zA-Z0-9._-]+", ""));
     // XML Documentation
     try
     {
-        var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        var xmlFile = "ServiceDocumentation.xml";
+        // var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
         var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-        options.IncludeXmlComments(xmlPath);
+        // var xmlPath = Path.Combine(webHostEnvironment.ContentRootPath, xmlFile);
+        if (File.Exists(xmlPath))
+            options.IncludeXmlComments(xmlPath);
+
     }
     catch (Exception ex)
     {
@@ -50,7 +63,9 @@ if (app.Environment.IsDevelopment())
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Galicia Seguros Template");
+    options.SwaggerEndpoint(swaggerPrefix == string.Empty
+                    ? "/swagger/v1/swagger.json"
+                    : $"/{swaggerPrefix}/swagger/v1/swagger.json", $"{serviceName} {serviceVersion}");
 });
 #endregion
 
