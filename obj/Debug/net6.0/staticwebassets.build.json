@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "s0tU38XJEISqOsYZZwFi0Rg6wFtfyC19fi9oJOV55PE=",
+  "Source": "GaliciaSegurosSvcTemplate.NetCore",
+  "BasePath": "_content/GaliciaSegurosSvcTemplate.NetCore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
