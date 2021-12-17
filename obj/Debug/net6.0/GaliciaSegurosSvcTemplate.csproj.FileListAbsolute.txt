@@ -54,3 +54,6 @@ D:\GIT\OWNER\NetCoreSvcTemplate\obj\Debug\net6.0\GaliciaSegurosSvcTemplate.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\obj\Debug\net6.0\ref\GaliciaSegurosSvcTemplate.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\obj\Debug\net6.0\GaliciaSegurosSvcTemplate.pdb
 D:\GIT\OWNER\NetCoreSvcTemplate\obj\Debug\net6.0\GaliciaSegurosSvcTemplate.genruntimeconfig.cache
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\net6.0\GaliciaSegurosSvcChassis.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\net6.0\NLog.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\net6.0\NLog.Extensions.Logging.dll

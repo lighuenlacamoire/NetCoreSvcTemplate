@@ -5,15 +5,34 @@
   "description": "Template para los microservicios de Galicia Seguros",
   "identity": "GaliciaSegurosSvcTemplate.NetCore",
   "shortName": "GaliciaSegurosSvcTemplate", // Valor utilizado en el cli - dotnet new {shortName}
+  "classifications": ["Web"],
   "tags": {
     "language": "C#",
     "type": "project"
   },
   "sourceName": "GaliciaSegurosSvcTemplate",
   "symbols": {
+    "serviceName": {
+      "type": "parameter",
+      "description": "Servicio: Nombre",
+      "defaultValue": "{SERVICE_NAME}",
+      "replaces": "{SERVICE_NAME}"
+    },
+    "serviceDescription": {
+      "type": "parameter",
+      "description": "Servicio: Descripcion",
+      "defaultValue": "{SERVICE_DESCRIPTION}",
+      "replaces": "{SERVICE_DESCRIPTION}"
+    },
+    "serviceVersion": {
+      "type": "parameter",
+      "description": "Servicio: Nº de Version",
+      "defaultValue": "{SERVICE_VERSION}",
+      "replaces": "{SERVICE_VERSION}"
+    },
     "Framework": {
       "type": "parameter",
-      "description": "The target framework for the project.",
+      "description": "Version de Netcore",
       "datatype": "choice",
       "choices": [
         {

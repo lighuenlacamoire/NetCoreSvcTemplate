@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GaliciaSegurosSvcTemplate.NetCore</id>
+    <version>1.0.1</version>
+    <title>API Galicia Seguros Template</title>
+    <authors>Banco Galicia</authors>
+    <description>Template para los microservicios de Galicia Seguros</description>
+    <copyright>Copyright © 2022</copyright>
+    <tags>dotnet-new templates contoso</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/lighuenlacamoire/NetCoreSvcTemplate" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="GaliciaSegurosSvcChassis.NetCore" version="1.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" version="1.14.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\GIT\OWNER\NetCoreSvcTemplate\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="D:\GIT\OWNER\NetCoreSvcTemplate\appsettings.json" target="content\appsettings.json" />
+    <file src="D:\GIT\OWNER\NetCoreSvcTemplate\.template.config\template.json" target="content\.template.config\template.json" />
+  </files>
+</package>

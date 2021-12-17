@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\GaliciaSegurosSvcTemplate.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\GaliciaSegurosSvcTemplate.csproj",
         "projectName": "GaliciaSegurosSvcTemplate.NetCore",
@@ -41,17 +41,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "GaliciaSegurosSvcChassis.NetCore": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.14.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            },
-            "Swashbuckle.AspNetCore.Annotations": {
-              "target": "Package",
-              "version": "[6.2.3, )"
             }
           },
           "imports": [
