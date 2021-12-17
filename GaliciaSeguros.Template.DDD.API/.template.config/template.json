@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Galicia Seguros",
+  "name": "Galicia Seguros Template DDD", // Valor que figura en la lista de templates - dotnet new --list 
+  "description": "Template de arquitectura Domain Driven Design (DDD) para los microservicios de Galicia Seguros",
+  "identity": "GaliciaSeguros.Template.DDD",
+  "shortName": "GaliciaSegurosTemplateDDD", // Valor utilizado en el cli - dotnet new {shortName}
+  "classifications": [ "Web" ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "GaliciaSegurosTemplateDDD",
+  "symbols": {
+    "serviceName": {
+      "type": "parameter",
+      "description": "Servicio: Nombre",
+      "defaultValue": "{SERVICE_NAME}",
+      "replaces": "{SERVICE_NAME}"
+    },
+    "serviceDescription": {
+      "type": "parameter",
+      "description": "Servicio: Descripcion",
+      "defaultValue": "{SERVICE_DESCRIPTION}",
+      "replaces": "{SERVICE_DESCRIPTION}"
+    },
+    "serviceVersion": {
+      "type": "parameter",
+      "description": "Servicio: Numero de Version",
+      "defaultValue": "{SERVICE_VERSION}",
+      "replaces": "{SERVICE_VERSION}"
+    },
+    "Framework": {
+      "type": "parameter",
+      "description": "Version de Netcore",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "defaultValue": "net6.0"
+    }
+  }
+}
