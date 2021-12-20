@@ -10,7 +10,8 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "GaliciaSegurosServiceTemplateDDD",
+  "sourceName": "GaliciaSeguros.IaaS.Service.Template.DDD", // debe coincidir con el "identity"
+  "preferNameDirectory": true,
   "symbols": {
     "serviceName": {
       "type": "parameter",
