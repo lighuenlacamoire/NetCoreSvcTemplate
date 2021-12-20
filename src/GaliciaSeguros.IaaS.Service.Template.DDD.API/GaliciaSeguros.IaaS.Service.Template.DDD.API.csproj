@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<PackageType>Template</PackageType>
+		<PackageVersion>1.0.0</PackageVersion>
+		<PackageId>GaliciaSeguros.IaaS.Service.Template.DDD</PackageId>
+		<IsPackable>true</IsPackable>
+		<Title>Galicia Seguros Service Template DDD</Title>
+		<Authors>Galicia Seguros</Authors>
+		<Description>Template de arquitectura Domain Driven Design (DDD) para los microservicios de Galicia Seguros</Description>
+		<PackageTags>dotnet-new;templates;contoso</PackageTags>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/lighuenlacamoire/NetCoreSvcTemplate</RepositoryUrl>
+		<Copyright>Copyright © 2022</Copyright>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>a3aa3df4-8a6f-4182-a7b9-3d3a089a84dc</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include=".template.config\template.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="GaliciaSeguros.IaaS.Service.Chassis" Version="1.0.1" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+		<PackageReference Include="MongoDB.Driver" Version="2.14.1" />
+	</ItemGroup>
+
+</Project>

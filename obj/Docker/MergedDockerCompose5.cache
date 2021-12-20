@@ -1,0 +1,45 @@
+services:
+  galiciaseguros.iaas.service.template.ddd.api:
+    build:
+      context: D:\GIT\OWNER\NetCoreSvcTemplate
+      dockerfile: src/GaliciaSeguros.IaaS.Service.Template.DDD.API/Dockerfile
+    container_name: SERVICE.API
+    depends_on:
+      mongo:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: galiciasegurosiaasservicetemplatedddapi
+    ports:
+    - published: 5156
+      target: 80
+    - published: 7156
+      target: 443
+    volumes:
+    - C:\Users\Administrador\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Administrador\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  mongo:
+    container_name: DB.MONGO
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_USERNAME: root
+    image: mongo
+    ports:
+    - published: 27017
+      target: 27017
+    restart: always
+  mongo-express:
+    container_name: DB.MONGO.MGM
+    depends_on:
+      mongo:
+        condition: service_started
+    environment:
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+    image: mongo-express
+    ports:
+    - published: 8081
+      target: 8081
+    restart: always
+version: '3.4'
