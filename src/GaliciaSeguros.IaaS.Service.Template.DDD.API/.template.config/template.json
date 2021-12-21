@@ -13,23 +13,30 @@
   "sourceName": "GaliciaSeguros.IaaS.Service.Template.DDD", // debe coincidir con el "identity"
   "preferNameDirectory": true,
   "symbols": {
-    "serviceName": {
+    "ServiceName": {
       "type": "parameter",
       "description": "Servicio: Nombre",
-      "defaultValue": "{SERVICE_NAME}",
+      "defaultValue": "Servicio",
       "replaces": "{SERVICE_NAME}"
     },
-    "serviceDescription": {
+    "ServiceDescription": {
       "type": "parameter",
       "description": "Servicio: Descripcion",
-      "defaultValue": "{SERVICE_DESCRIPTION}",
+      "defaultValue": "Servicio API",
       "replaces": "{SERVICE_DESCRIPTION}"
     },
-    "serviceVersion": {
+    "ServiceVersion": {
       "type": "parameter",
       "description": "Servicio: Numero de Version",
-      "defaultValue": "{SERVICE_VERSION}",
+      "defaultValue": "1.0.0",
       "replaces": "{SERVICE_VERSION}"
+    },
+    "Swagger": {
+      "type": "parameter",
+      "datatype": "bool",
+      "isRequired": false,
+      "defaultValue": "true",
+      "description": "Configurar Swagger?"
     },
     "Framework": {
       "type": "parameter",

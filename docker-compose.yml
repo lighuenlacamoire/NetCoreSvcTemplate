@@ -6,5 +6,3 @@ services:
     build:
       context: .
       dockerfile: src/GaliciaSeguros.IaaS.Service.Template.DDD.API/Dockerfile 
-    depends_on:
-      - mongo

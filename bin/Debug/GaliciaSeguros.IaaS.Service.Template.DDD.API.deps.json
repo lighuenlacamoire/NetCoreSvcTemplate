@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "GaliciaSeguros.IaaS.Service.Template.DDD.API/1.0.0": {
         "dependencies": {
-          "GaliciaSeguros.IaaS.Service.Chassis": "1.0.1",
+          "GaliciaSeguros.IaaS.Service.Chassis": "1.0.2",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
           "MongoDB.Driver": "2.14.1"
         },
@@ -24,7 +24,7 @@
           }
         }
       },
-      "GaliciaSeguros.IaaS.Service.Chassis/1.0.1": {
+      "GaliciaSeguros.IaaS.Service.Chassis/1.0.2": {
         "dependencies": {
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
           "Swashbuckle.AspNetCore": "6.2.3",
@@ -32,8 +32,8 @@
         },
         "runtime": {
           "lib/net6.0/GaliciaSeguros.IaaS.Service.Chassis.API.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
           },
           "lib/net6.0/GaliciaSeguros.IaaS.Service.Chassis.Storage.Mongo.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -234,12 +234,12 @@
       "path": "dnsclient/1.4.0",
       "hashPath": "dnsclient.1.4.0.nupkg.sha512"
     },
-    "GaliciaSeguros.IaaS.Service.Chassis/1.0.1": {
+    "GaliciaSeguros.IaaS.Service.Chassis/1.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-96VIU32+eaHfyEJ/gw+Rk6nVVF7gvprjANSYeXmPscd8WJYxvP0Vhp7Dj+F5BLlOPZCygt7eJliadB9GINtBoA==",
-      "path": "galiciaseguros.iaas.service.chassis/1.0.1",
-      "hashPath": "galiciaseguros.iaas.service.chassis.1.0.1.nupkg.sha512"
+      "sha512": "sha512-0AAqP4N5/oyojwV4AWB/ToFjD1/g/NcPpN4v79ccnCovy4drKwIyoWSY3OVKUGOw2svJyrh0+RFWzcyzG37U3w==",
+      "path": "galiciaseguros.iaas.service.chassis/1.0.2",
+      "hashPath": "galiciaseguros.iaas.service.chassis.1.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",

@@ -1,5 +1,5 @@
-﻿using GaliciaSeguros.IaaS.Service.Chassis.Storage.Mongo.Contracts;
-using GaliciaSeguros.IaaS.Service.Chassis.Storage.Mongo.Implementation;
+﻿using GaliciaSeguros.IaaS.Service.Chassis.Storage.Implementation;
+using GaliciaSeguros.IaaS.Service.Chassis.Storage.Mongo.Contracts;
 
 namespace GaliciaSeguros.IaaS.Service.Template.DDD.API.Contracts
 {

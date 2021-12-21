@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ayiFcTnAJVZI5OkQ5bptNzS6QdmklG0rGgpVANlLbT9UkYYmMOGV+RPR9pUXLqjGfzCg6+ZSNqgI2lDpbgboEg==",
+  "dgSpecHash": "rIgMu66ovcz0T/1G7aWUy7EWUYoXF2S79CCBjHj9fmm1VMZG4zi2gTeZW1zjtHb/cDs/ZaHP4p+xB1fn0dUuWQ==",
   "success": true,
   "projectFilePath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.API\\GaliciaSeguros.IaaS.Service.Template.DDD.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
-    "C:\\Users\\Administrador\\.nuget\\packages\\galiciaseguros.iaas.service.chassis\\1.0.1\\galiciaseguros.iaas.service.chassis.1.0.1.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\galiciaseguros.iaas.service.chassis\\1.0.2\\galiciaseguros.iaas.service.chassis.1.0.2.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",

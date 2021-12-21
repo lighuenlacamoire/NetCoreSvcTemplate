@@ -3,6 +3,7 @@ services:
     build:
       context: D:\GIT\OWNER\NetCoreSvcTemplate
       dockerfile: src/GaliciaSeguros.IaaS.Service.Template.DDD.API/Dockerfile
+    container_name: SERVICE.API
     depends_on:
       mongo:
         condition: service_started
@@ -19,6 +20,7 @@ services:
     - C:\Users\Administrador\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\Administrador\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
   mongo:
+    container_name: DB.MONGO
     environment:
       MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_ROOT_USERNAME: root
@@ -28,6 +30,7 @@ services:
       target: 27017
     restart: always
   mongo-express:
+    container_name: DB.MONGO.MGM
     depends_on:
       mongo:
         condition: service_started
@@ -39,4 +42,13 @@ services:
     - published: 8081
       target: 8081
     restart: always
+  sql1:
+    container_name: DB.SQLSERVER
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: admin
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
 version: '3.4'
