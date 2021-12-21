@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  galiciaseguros.iaas.service.template.ddd.api:
+    image: ${DOCKER_REGISTRY-}galiciasegurosiaasservicetemplatedddapi
+    build:
+      context: .
+      dockerfile: src/GaliciaSeguros.IaaS.Service.Template.DDD.API/Dockerfile 
