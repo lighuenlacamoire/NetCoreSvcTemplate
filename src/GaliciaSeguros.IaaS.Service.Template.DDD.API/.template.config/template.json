@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Galicia Seguros",
-  "name": "Galicia Seguros Template DDD", // Valor que figura en la lista de templates - dotnet new --list 
+  "name": "Galicia Seguros Template DDD (Net6)", // Valor que figura en la lista de templates - dotnet new --list 
   "description": "Template de arquitectura Domain Driven Design (DDD) para los microservicios de Galicia Seguros",
   "identity": "GaliciaSeguros.IaaS.Service.Template.DDD",
   "shortName": "GaliciaSegurosServiceTemplateDDD", // Valor utilizado en el cli - dotnet new {shortName}

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GaliciaSeguros.IaaS.Service.Template.DDD</id>
+    <version>1.0.0</version>
+    <title>Galicia Seguros Service Template DDD</title>
+    <authors>Galicia Seguros</authors>
+    <description>Template de arquitectura Domain Driven Design (DDD) para los microservicios de Galicia Seguros</description>
+    <copyright>Copyright © 2022</copyright>
+    <tags>dotnet-new templates contoso</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/lighuenlacamoire/NetCoreSvcTemplate" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="GaliciaSeguros.IaaS.Service.Chassis" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" version="1.14.0" exclude="Build,Analyzers" />
+        <dependency id="MongoDB.Driver" version="2.14.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.API\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.API\appsettings.json" target="content\appsettings.json" />
+    <file src="D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.API\.template.config\template.json" target="content\.template.config\template.json" />
+  </files>
+</package>

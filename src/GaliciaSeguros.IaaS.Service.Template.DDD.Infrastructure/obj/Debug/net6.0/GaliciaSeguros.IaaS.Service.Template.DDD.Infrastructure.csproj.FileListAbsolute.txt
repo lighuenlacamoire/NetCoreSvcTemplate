@@ -1,0 +1,15 @@
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\bin\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.deps.json
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\bin\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\bin\Debug\net6.0\ref\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\bin\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.pdb
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\bin\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\bin\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.pdb
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.csproj.AssemblyReference.cache
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.AssemblyInfoInputs.cache
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.AssemblyInfo.cs
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.csproj.CoreCompileInputs.cache
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.csproj.CopyComplete
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\ref\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.pdb

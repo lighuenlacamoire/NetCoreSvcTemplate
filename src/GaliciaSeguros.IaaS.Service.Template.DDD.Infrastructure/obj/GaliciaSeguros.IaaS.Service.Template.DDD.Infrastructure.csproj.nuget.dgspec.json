@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.csproj",
+        "projectName": "GaliciaSeguros.IaaS.Service.Template.DDD.Domain",
+        "projectPath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/lighuenlacamoire/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GaliciaSeguros.IaaS.Service.Chassis": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.csproj",
+        "projectName": "GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure",
+        "projectPath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/lighuenlacamoire/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.csproj": {
+                "projectPath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GaliciaSeguros.IaaS.Service.Chassis": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

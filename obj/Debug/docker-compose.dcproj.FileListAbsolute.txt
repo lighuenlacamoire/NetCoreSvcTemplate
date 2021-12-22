@@ -5,7 +5,6 @@ D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.D
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\appsettings.Development.json
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\appsettings.json
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.DDD.API.exe
-D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Chassis.API.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Chassis.Storage.Mongo.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Chassis.Storage.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Chassis.Swagger.dll
@@ -23,3 +22,16 @@ D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\MongoDB.Driver.Core.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\MongoDB.Libmongocrypt.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\DnsClient.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\SharpCompress.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.DDD.Application.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Chassis.Storage.EF.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.DDD.Application.pdb
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.pdb
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\Microsoft.Identity.Client.dll
+D:\GIT\OWNER\NetCoreSvcTemplate\bin\Debug\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.pdb
