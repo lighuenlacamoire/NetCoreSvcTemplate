@@ -9,6 +9,8 @@ namespace GaliciaSeguros.IaaS.Service.Template.DDD.Application.Services.Implemen
 {
     public interface IUserService : IDisposable
     {
+        bool Create(User user);
+        void Delete(User user);
         IEnumerable<User> GetAll();
     }
 }

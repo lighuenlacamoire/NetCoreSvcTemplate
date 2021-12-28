@@ -34,8 +34,9 @@ namespace GaliciaSeguros.IaaS.Service.Template.DDD.API.Controllers
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody]User user)
         {
+            _userService.Create(user);
         }
 
         // PUT api/<UserController>/5
@@ -46,8 +47,10 @@ namespace GaliciaSeguros.IaaS.Service.Template.DDD.API.Controllers
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Guid id, [FromBody]User user)
         {
+            user.Id = id;
+            _userService.Delete(user);
         }
     }
 }

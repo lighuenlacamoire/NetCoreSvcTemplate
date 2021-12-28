@@ -9,4 +9,3 @@ D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Dom
 D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\obj\Debug\net6.0\ref\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.pdb
-D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.csproj.AssemblyReference.cache

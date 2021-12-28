@@ -5,7 +5,7 @@ services:
       dockerfile: src/GaliciaSeguros.IaaS.Service.Template.DDD.API/Dockerfile
     container_name: SERVICE_API
     depends_on:
-      sqldata:
+      sqlserver:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -19,12 +19,18 @@ services:
     volumes:
     - C:\Users\Administrador\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\Administrador\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-  sqldata:
+  sqlserver:
+    container_name: SERVICE_SQLSERVER
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: admin
+      SA_PASSWORD: G@lic1aS3guros
     image: mcr.microsoft.com/mssql/server:2019-latest
     ports:
-    - published: 1433
+    - published: 5433
       target: 1433
+    volumes:
+    - galiciaseguros_sqldata:/var/opt/mssql:rw
 version: '3.4'
+volumes:
+  galiciaseguros_sqldata:
+    external: false

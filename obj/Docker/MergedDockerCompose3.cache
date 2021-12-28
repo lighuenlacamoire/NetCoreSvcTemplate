@@ -1,0 +1,57 @@
+services:
+  galiciaseguros.iaas.service.template.ddd.api:
+    build:
+      context: D:\GIT\OWNER\NetCoreSvcTemplate
+      dockerfile: src/GaliciaSeguros.IaaS.Service.Template.DDD.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: GaliciaSeguros.IaaS.Service.Template.DDD.API
+      target: base
+    container_name: SERVICE_API
+    depends_on:
+      sqlserver:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://0.0.0.0:443;http://0.0.0.0:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: galiciasegurosiaasservicetemplatedddapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/GaliciaSeguros.IaaS.Service.Template.DDD.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5156
+      target: 80
+    - published: 7156
+      target: 443
+    tty: true
+    volumes:
+    - D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.API:/app:rw
+    - C:\Users\Administrador\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Administrador\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Administrador\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\Administrador\.nuget\packages:/root/.nuget/packages:ro
+    - D:\GIT\OWNER\NetCoreSvcTemplate:/src:rw
+  sqlserver:
+    container_name: SERVICE_SQLSERVER
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: G@lic1aS3guros
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 5433
+      target: 1433
+    volumes:
+    - galiciaseguros_sqldata:/var/opt/mssql:rw
+version: '3.4'
+volumes:
+  galiciaseguros_sqldata:
+    external: false

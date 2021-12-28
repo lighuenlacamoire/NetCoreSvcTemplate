@@ -15,7 +15,6 @@ namespace GaliciaSeguros.IaaS.Service.Template.DDD.Domain.Mappings
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("Users");
-
             builder.HasKey(b => b.Id);
             builder.Property(b => b.Name);
         }

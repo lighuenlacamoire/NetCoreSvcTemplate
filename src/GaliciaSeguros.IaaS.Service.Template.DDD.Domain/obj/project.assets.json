@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "GaliciaSeguros.IaaS.Service.Chassis/1.0.8": {
+      "GaliciaSeguros.IaaS.Service.Chassis/1.0.14": {
         "type": "package",
         "dependencies": {
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
@@ -710,15 +710,15 @@
     }
   },
   "libraries": {
-    "GaliciaSeguros.IaaS.Service.Chassis/1.0.8": {
-      "sha512": "F3arDO+08Zv2cbJiR7uhwajTouOjLbvy3W75ijV+MIGTscZQ5OqUsDG4qQ37vO4SN9vRWtofajmjIqLn/gQU0A==",
+    "GaliciaSeguros.IaaS.Service.Chassis/1.0.14": {
+      "sha512": "hjdo0aJ20Qz5EmezO/qVKbj+YwuxRbQn5zgUOBOoIUv+XAVdFRkhD5uXdjziTVvrLrQGxlN+zZbpwQ1USQ2u4w==",
       "type": "package",
-      "path": "galiciaseguros.iaas.service.chassis/1.0.8",
+      "path": "galiciaseguros.iaas.service.chassis/1.0.14",
       "files": [
         ".nupkg.metadata",
         "content/appsettings.Development.json",
         "content/appsettings.json",
-        "galiciaseguros.iaas.service.chassis.1.0.8.nupkg.sha512",
+        "galiciaseguros.iaas.service.chassis.1.0.14.nupkg.sha512",
         "galiciaseguros.iaas.service.chassis.nuspec",
         "lib/net6.0/GaliciaSeguros.IaaS.Service.Chassis.API.dll",
         "lib/net6.0/GaliciaSeguros.IaaS.Service.Chassis.API.runtimeconfig.json",
@@ -2119,13 +2119,14 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "GaliciaSeguros.IaaS.Service.Chassis >= 1.0.8",
+      "GaliciaSeguros.IaaS.Service.Chassis >= 1.0.14",
       "Microsoft.EntityFrameworkCore >= 6.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2136,6 +2137,9 @@
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
       "outputPath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -2166,7 +2170,7 @@
         "dependencies": {
           "GaliciaSeguros.IaaS.Service.Chassis": {
             "target": "Package",
-            "version": "[1.0.8, )"
+            "version": "[1.0.14, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.Repository
 {
 
-    public class UserRepository : BaseRepository<User>, IUserRepository
+    public class UserRepository : BaseRepository<User, DataContext>, IUserRepository, IRepository<User>
     {
         public UserRepository(DataContext context) : base(context)
         {
@@ -20,7 +20,7 @@ namespace GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.Repository
 
         public User GetByName(string name)
         {
-            return DbSet.AsEnumerable().FirstOrDefault(c => c.Name == name);
+            return _dbSet.AsEnumerable().FirstOrDefault(c => c.Name == name);
         }
     }
 }

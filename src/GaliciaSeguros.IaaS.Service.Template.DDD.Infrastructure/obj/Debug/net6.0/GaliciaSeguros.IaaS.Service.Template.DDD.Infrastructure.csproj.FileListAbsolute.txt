@@ -13,3 +13,5 @@ D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Inf
 D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\ref\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.dll
 D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.pdb
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\bin\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.runtimeconfig.json
+D:\GIT\OWNER\NetCoreSvcTemplate\src\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure\obj\Debug\net6.0\GaliciaSeguros.IaaS.Service.Template.DDD.Infrastructure.genruntimeconfig.cache

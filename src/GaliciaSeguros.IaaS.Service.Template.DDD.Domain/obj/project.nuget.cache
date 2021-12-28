@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iXXQWu16OosGVZIW7fC3qkz8NDzomrhXDKOsMWJ1U9j9DHZdKni4NhpCBiTATqvhBP9gChtjO6EoVLSbrL9oHw==",
+  "dgSpecHash": "HLpicyaACv1Gn6PaTUC3PxeXjhT41QDLCXsHu9iWfxT6clLDtaoUR8EJDHpXsIepG40cq0d9ivrKlMeMSHO50Q==",
   "success": true,
   "projectFilePath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain\\GaliciaSeguros.IaaS.Service.Template.DDD.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrador\\.nuget\\packages\\galiciaseguros.iaas.service.chassis\\1.0.8\\galiciaseguros.iaas.service.chassis.1.0.8.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\galiciaseguros.iaas.service.chassis\\1.0.14\\galiciaseguros.iaas.service.chassis.1.0.14.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

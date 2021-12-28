@@ -1,0 +1,37 @@
+services:
+  galiciaseguros.iaas.service.template.ddd.api:
+    build:
+      context: D:\GIT\OWNER\NetCoreSvcTemplate
+      dockerfile: src/GaliciaSeguros.IaaS.Service.Template.DDD.API/Dockerfile
+    container_name: SERVICE_API
+    depends_on:
+      sqlserver:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://0.0.0.0:443;http://0.0.0.0:80
+      SwaggerSettings__ServiceName: Api Service
+    image: galiciasegurosiaasservicetemplatedddapi
+    ports:
+    - published: 5156
+      target: 80
+    - published: 7156
+      target: 443
+    volumes:
+    - C:\Users\Administrador\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Administrador\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  sqlserver:
+    container_name: SERVICE_SQLSERVER
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: G@lic1aS3guros
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 5433
+      target: 1433
+    volumes:
+    - galiciaseguros_sqldata:/var/opt/mssql:rw
+version: '3.4'
+volumes:
+  galiciaseguros_sqldata:
+    external: false
