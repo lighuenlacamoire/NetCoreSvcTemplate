@@ -1,6 +1,9 @@
 ﻿:root {
     --galiciaOrangeColor: #ff671b;
-    --galiciaDarkOrangeColor: #90172e;
+    --galiciaWhiteColor: #ffffff;
+    --galiciaGreyColor: #404040;
+    --galiciaLightOrangeColor: #fa8b53;
+    --galiciaDarkOrangeColor: #ac162c;
     --primaryColor: #5ec297;
     --secondaryColor: #349b72;
     --darkColor: #000000;
@@ -14,8 +17,10 @@
     --bgMain: var(--lightColor);
     --bgSecondary: #ffffff;
     --fcNegative: #ffffff;
+    --fcMenuIcon: #5ec297;
+    --bcMenuIcon: #5ec297;
     --fcBase: var(--grayColor);
-    --bgAside: var(--midDarkColor);
+    --bgAside: var(--galiciaGreyColor);
     --bgMenuActive: var(--galiciaOrangeColor);
     --bcMenuActive: var(--galiciaDarkOrangeColor);
     --bcInput: var(--midGrayColor);

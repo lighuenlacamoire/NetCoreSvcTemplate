@@ -10,6 +10,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
+      SwaggerSettings__ServiceName: Api Service
     image: galiciasegurosiaasservicetemplatedddapi
     ports:
     - published: 5156

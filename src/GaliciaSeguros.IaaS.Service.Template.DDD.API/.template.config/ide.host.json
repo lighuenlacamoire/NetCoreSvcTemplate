@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json.schemastore.org/vs-2017.3.host",
+  "order": 0,
+  "icon": "icon.png",
+  "symbolInfo": [
+    {
+      "id": "ServiceName",
+      "name": {
+        "text": "Nombre del servicio"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "ServiceDescription",
+      "name": {
+        "text": "Breve descripción del servicio"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "ServiceVersion",
+      "name": {
+        "text": "Número de version"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "AddHealthCheck",
+      "name": {
+        "text": "Agregar HealthCheck?"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "Framework",
+      "name": {
+        "text": "Version de NetCore"
+      },
+      "isVisible": true
+    }
+  ]
+}

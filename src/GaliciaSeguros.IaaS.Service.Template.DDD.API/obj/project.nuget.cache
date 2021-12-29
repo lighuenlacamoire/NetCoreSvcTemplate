@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WOPbXdD5WKO3Uy8n54ot+5ndqszYHij2N5JOBnQjcZR2PtgVN2tcRPGl1nZXJFdFNo+QdURzD7+6e4f0EvAnkg==",
+  "dgSpecHash": "X+GiBQtR3UnzT8ZLxRx+E88sKo7IQ1S0dg3Ar+W3b3ikqdq1RzWRB1f7nUy03ECngRtsgHcj/ArSFOe0163XSg==",
   "success": true,
   "projectFilePath": "D:\\GIT\\OWNER\\NetCoreSvcTemplate\\src\\GaliciaSeguros.IaaS.Service.Template.DDD.API\\GaliciaSeguros.IaaS.Service.Template.DDD.API.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\fractions\\4.0.1\\fractions.4.0.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\galiciaseguros.iaas.service.chassis\\1.0.14\\galiciaseguros.iaas.service.chassis.1.0.14.nupkg.sha512",
-    "C:\\Users\\Administrador\\.nuget\\packages\\galiciaseguros.iaas.service.chassis.healthcheck\\1.0.16\\galiciaseguros.iaas.service.chassis.healthcheck.1.0.16.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\galiciaseguros.iaas.service.chassis.healthcheck\\1.0.1\\galiciaseguros.iaas.service.chassis.healthcheck.1.0.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\identitymodel\\4.1.0\\identitymodel.4.1.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\identitymodel.oidcclient\\3.1.2\\identitymodel.oidcclient.3.1.2.nupkg.sha512",

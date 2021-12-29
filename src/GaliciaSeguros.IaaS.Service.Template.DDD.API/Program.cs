@@ -6,14 +6,12 @@ using GaliciaSeguros.IaaS.Service.Template.DDD.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddCustomizedSwagger(builder.Configuration, builder.Environment);
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddCustomizedDatabase(builder.Configuration, StorageStartup.CreateStorageStartup(builder.Services));
+#if (AddHealthCheck)
 builder.Services.AddCustomizedHealthCheck(builder.Configuration, builder.Configuration["SQLSettings:ConnectionString"]);
-
+#endif
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,8 +24,9 @@ app
     {
         endpoints.MapControllers();
     });
-// ----- Health check -----
+#if (AddHealthCheck)
 app.UseCustomizedHealthCheck();
+#endif
 // ----- Swagger UI -----
 app.UseCustomizedSwagger(app.Environment);
 

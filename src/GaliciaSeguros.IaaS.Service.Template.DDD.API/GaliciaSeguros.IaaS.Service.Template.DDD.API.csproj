@@ -5,7 +5,7 @@
 		<PackageVersion>1.0.0</PackageVersion>
 		<PackageId>GaliciaSeguros.IaaS.Service.Template.DDD</PackageId>
 		<IsPackable>true</IsPackable>
-		<Title>Galicia Seguros Service Template DDD</Title>
+		<Title>Galicia Seguros Service Template (Arquitectura DDD)</Title>
 		<Authors>Galicia Seguros</Authors>
 		<Description>Template de arquitectura Domain Driven Design (DDD) para los microservicios de Galicia Seguros</Description>
 		<PackageTags>dotnet-new;templates;contoso</PackageTags>
@@ -22,15 +22,22 @@
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
+		<!-- omit the package creating library itself -->
+		<PackProject>true</PackProject>
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Content Include=".template.config\dotnetcli.host.json" />
+		<Content Include=".template.config\icon.png" />
+		<Content Include=".template.config\ide.host.json" />
 		<Content Include=".template.config\template.json" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="GaliciaSeguros.IaaS.Service.Chassis" Version="1.0.14" />
-		<PackageReference Include="GaliciaSeguros.IaaS.Service.Chassis.HealthCheck" Version="1.0.16" />
+		<PackageReference Include="GaliciaSeguros.IaaS.Service.Chassis.HealthCheck" Version="1.0.1" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
 	</ItemGroup>
 
@@ -53,4 +60,18 @@
 	  </EmbeddedResource>
 	</ItemGroup>
 
+	<Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
+		<ItemGroup>
+			<!-- Filter out unnecessary files -->
+			<_ReferenceCopyLocalPaths Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference')-&gt;WithMetadataValue('PrivateAssets', 'All'))" />
+		</ItemGroup>
+
+		<!-- Print batches for debug purposes -->
+		<Message Text="Batch for .nupkg: ReferenceCopyLocalPaths = @(_ReferenceCopyLocalPaths), ReferenceCopyLocalPaths.DestinationSubDirectory = %(_ReferenceCopyLocalPaths.DestinationSubDirectory) Filename = %(_ReferenceCopyLocalPaths.Filename) Extension = %(_ReferenceCopyLocalPaths.Extension)" Importance="High" Condition="'@(_ReferenceCopyLocalPaths)' != ''" />
+
+		<ItemGroup>
+			<!-- Add file to package with consideration of sub folder. If empty, the root folder is chosen. -->
+			<BuildOutputInPackage Include="@(_ReferenceCopyLocalPaths)" TargetPath="%(_ReferenceCopyLocalPaths.DestinationSubDirectory)" />
+		</ItemGroup>
+	</Target>
 </Project>

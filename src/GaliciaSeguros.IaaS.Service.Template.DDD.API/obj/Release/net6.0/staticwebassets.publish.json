@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vXOzuzlXjs8G9cWQ2gpDTuJCrMiPf9blytxEFcl36NM=",
+  "Source": "GaliciaSeguros.IaaS.Service.Template.DDD",
+  "BasePath": "_content/GaliciaSeguros.IaaS.Service.Template.DDD",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
